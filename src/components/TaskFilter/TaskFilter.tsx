@@ -1,11 +1,8 @@
-// export interface TaskFilterProps {
-//   onFilterChange: (filters: {
-//     status?: TaskStatus;
-//     priority?: 'low' | 'medium' | 'high';
-//   }) => void;
-// }
-
 import type { Priority, TaskFilterProps, TaskStatus } from '../../types';
+
+// This component provides an interface for the use to show parts of the task list
+// based on filtering by status or priority. These choices are passed by to the
+// TaskList parent component to update the display.
 
 export function TaskFilter({ onFilterChange }: TaskFilterProps) {
   return (

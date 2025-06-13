@@ -1,7 +1,12 @@
-import { useState } from 'react';
 import './App.css';
+import { useState } from 'react';
 import { TaskList } from './components/TaskList/TaskList';
 import type { Task, TaskStatus } from './types';
+
+// This App component provides sample data and update handling functions to
+// the task components. In a real-world situation this data would be stored
+// in a database, or at least local storage for permanence and portability.
+
 const tasksDefault: Task[] = [
   {
     id: '123',

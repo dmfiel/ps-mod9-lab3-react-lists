@@ -1,15 +1,17 @@
-// export type TaskStatus = 'pending' | 'in-progress' | 'completed';
-
 import { useState } from 'react';
-import type { FilterProps, TaskListProps } from '../../types';
 import { TaskFilter } from '../TaskFilter/TaskFilter';
 import { TaskItem } from '../TaskItem/TaskItem';
+import type { Filters, TaskListProps } from '../../types';
+
+// This component shows a list of tasks passed down from its parent which also handles
+// the list updates. Task items are shown when they are not deleted and meet the criteria
+// specified by the TaskFilter component.
 
 export function TaskList({ tasks, onStatusChange, onDelete }: TaskListProps) {
   const [statusFilter, setStatusFilter] = useState('all');
   const [priorityFilter, setPriorityFilter] = useState('all');
 
-  function onFilterChange({ status, priority }: FilterProps) {
+  function onFilterChange({ status, priority }: Filters) {
     console.log(status, priority);
     if (status) setStatusFilter(status);
     if (priority) setPriorityFilter(priority);

@@ -1,5 +1,9 @@
 import type { TaskItemProps, TaskStatus } from '../../types';
 
+// This component renders an individual task. The status and priority are shown with
+// responsive colors to quickly highlight the top items to the user. Interactive controls
+// are available for the user to change task status or delete unneeded items.
+
 export function TaskItem({ task, onStatusChange, onDelete }: TaskItemProps) {
   return (
     <div className="p-4 border rounded-lg shadow-sm hover:shadow-md transition-shadow bg-white dark:bg-black dark:border-gray-700">
