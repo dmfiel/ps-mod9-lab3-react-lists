@@ -12,4 +12,4 @@ Status changes trigger a handler at the App level, which finds the correct task 
 
 4. What challenges did you face when implementing conditional rendering?
 
-The hardest part with conditional rendering is getting the syntax correct when mixing HTML and JavaScript in the JSX return values. Plus the variance between JSX and HTML (e.g., className vs. class) takes a bit to become comforable.
+The hardest part with conditional rendering is getting the syntax correct when mixing HTML and JavaScript in the JSX return values. Plus the variance between JSX and HTML (e.g., className vs. class) takes a bit to become comfortable.
